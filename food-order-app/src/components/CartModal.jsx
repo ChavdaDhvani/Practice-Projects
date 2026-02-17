@@ -1,24 +1,15 @@
-import { useContext, useEffect, useRef, useState } from "react";
+import { useContext, useEffect, useState } from "react";
 import { currencyFormatter } from "../util/formatting";
 import CheckoutFormModal from './CheckoutFormModal';
 import CartContext from "../context/CartContext";
+import { useDialog } from "../hooks/useDialog";
 
 export default function CartModal({ open, onClose }) {
-  const dialog = useRef();
   const [showCheckout, setShowCheckout] = useState(false);
+  const dialog = useDialog(open);
   const cartCtx = useContext(CartContext);
 
   const cartItems = cartCtx.items;
-
-  useEffect(() => {
-    if (!dialog.current) return;
-
-    if (open) {
-      dialog.current.showModal();
-    } else {
-      dialog.current.close();
-    }
-  }, [open]);
 
   const cartTotal = cartItems.reduce(
     (totalPrice, item) => totalPrice + item.quantity * item.price,

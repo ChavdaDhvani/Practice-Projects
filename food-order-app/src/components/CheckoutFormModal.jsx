@@ -1,7 +1,8 @@
-import { useContext, useEffect, useRef, useState } from "react";
+import { useContext, useState } from "react";
 import { currencyFormatter } from "../util/formatting";
 import Button from "../UI/Button";
 import CartContext from "../context/CartContext";
+import { useDialog } from "../hooks/useDialog";
 
 export default function CheckoutModal({ open, onClose }) {
 
@@ -15,18 +16,7 @@ export default function CheckoutModal({ open, onClose }) {
 
     const [isSubmitting, setIsSubmitting] = useState(false);
     const [error, setError] = useState(null);
-
-    const dialog = useRef();
-
-    useEffect(() => {
-        if (!dialog.current) return;
-
-        if (open) {
-            dialog.current.showModal();
-        } else {
-            dialog.current.close();
-        }
-    }, [open]);
+    const dialog = useDialog(open);
 
     async function handleSubmit(event) {
         event.preventDefault();
