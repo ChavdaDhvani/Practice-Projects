@@ -53,10 +53,7 @@ export default function CartModal({ open, onClose }) {
                     </p>
 
                     <p className="cart-item-actions">
-                      <button onClick={() => cartCtx.removeItem(item)}>
-                        {" "}
-                        -{" "}
-                      </button>
+                      <button onClick={() => cartCtx.removeItem(item)}> - </button>
                       <span> {item.quantity}</span>
                       <button onClick={() => cartCtx.addItem(item)}> + </button>
                     </p>
