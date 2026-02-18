@@ -1,6 +1,6 @@
 import { useContext, useEffect, useState } from "react";
 import { currencyFormatter } from "../util/formatting";
-import CheckoutFormModal from './CheckoutFormModal';
+import CheckoutFormModal from "./CheckoutFormModal";
 import CartContext from "../context/CartContext";
 import { useDialog } from "../hooks/useDialog";
 

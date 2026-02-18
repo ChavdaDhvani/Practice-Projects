@@ -1,7 +1,7 @@
-import Meals from "./components/Meals";
-import Header from "./components/Header";
-import { useState, useEffect } from "react";
-import { CartContextProvider } from "./context/CartContext";
+import Meals from './components/Meals';
+import Header from './components/Header';
+import { useState, useEffect } from 'react';
+import { CartContextProvider } from './context/CartContext';
 import "./App.css";
 
 function App() {

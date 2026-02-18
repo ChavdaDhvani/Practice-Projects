@@ -1,8 +1,8 @@
-import logo from "../assets/foodlogo.png";
-import CartModal from "./CartModal";
-import Button from "../UI/Button";
-import { useState, useContext } from "react";
-import CartContext from "../context/CartContext";
+import logo from '../assets/foodlogo.png';
+import CartModal from './CartModal';
+import Button from '../UI/Button';
+import { useState, useContext } from 'react';
+import CartContext from '../context/CartContext';
 
 export default function Header() {
     

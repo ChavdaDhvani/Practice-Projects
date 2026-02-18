@@ -1,8 +1,8 @@
-import { useContext, useState } from "react";
-import { currencyFormatter } from "../util/formatting";
-import Button from "../UI/Button";
-import CartContext from "../context/CartContext";
-import { useDialog } from "../hooks/useDialog";
+import { useContext, useState } from 'react';
+import { currencyFormatter } from '../util/formatting';
+import Button from '../UI/Button';
+import CartContext from '../context/CartContext';
+import { useDialog } from '../hooks/useDialog';
 
 export default function CheckoutModal({ open, onClose }) {
 
