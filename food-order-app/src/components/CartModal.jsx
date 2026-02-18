@@ -1,8 +1,8 @@
-import { useContext, useEffect, useState } from "react";
-import { currencyFormatter } from "../util/formatting";
-import CheckoutFormModal from "./CheckoutFormModal";
-import CartContext from "../context/CartContext";
-import { useDialog } from "../hooks/useDialog";
+import { useContext, useEffect, useState } from 'react';
+import { currencyFormatter } from '../util/formatting';
+import CheckoutFormModal from  './CheckoutFormModal';
+import CartContext from '../context/CartContext';
+import { useDialog } from '../hooks/useDialog';
 
 export default function CartModal({ open, onClose }) {
   const [showCheckout, setShowCheckout] = useState(false);
