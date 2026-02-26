@@ -1,0 +1,27 @@
+{
+  "products": [
+    {
+      "id": "3",
+      "title": "Headphones",
+      "price": 3000,
+      "description": "Noise cancelling wireless headphones"
+    },
+    {
+      "id": "4",
+      "title": "Smart Watch",
+      "price": 8000,
+      "description": "Fitness tracking smartwatch with heart-rate monitor"
+    },
+    {
+      "id": "5",
+      "title": "Gaming Mouse",
+      "price": 1500,
+      "description": "Ergonomic RGB gaming mouse"
+    },
+    {
+      "id": "6",
+      "title": "p5",
+      "price": "123"
+    }
+  ]
+}
